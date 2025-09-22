@@ -2,13 +2,14 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import Foodlist from './list.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className="wrapper">
       <div className="container">
         <App />
       </div>
-    </div>
+    {/* <Foodlist /> */}
+
   </StrictMode>,
 )
