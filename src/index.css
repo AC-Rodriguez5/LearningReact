@@ -26,6 +26,7 @@
   transform: scale(1.1);
   box-shadow: -10px 55px 5px 3px  hsla(0, 0%, 0%, 0.1);
   background-color: white;
+  cursor: pointer;
 }
 .Img-block .Image{
   max-width: 300px;

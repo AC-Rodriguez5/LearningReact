@@ -1,6 +1,6 @@
 
 export const foods = [
-  { id: 1, dish: "adobo", cal: 250, serving: "250 grams per serving" },
+  { id: 1, dish: "", cal: 250, serving: "250 grams per serving" },
   { id: 2, dish: "Tinola", cal: 180, serving: "300 grams per serving" },
   { id: 3, dish: "fried chicken", cal: 280, serving: "180 grams per serving" },
   { id: 4, dish: "Inasal", cal: 160, serving: "200 grams per serving" }
@@ -34,16 +34,13 @@ function FoodList() {
   );
 }
 
-
-
   //for printing
   function printing(list) {
     return list.map(food => (
       <li key={food.id}>
-        {food.dish}: &nbsp; {food.serving} &nbsp; {food.cal}
+        {food.dish ? food.dish : "Food"}: &nbsp; {food.serving ? food.serving : "serving"} &nbsp; {food.cal ? food.cal : "cal"}
       </li>
     ));
   }
-  
 
 export default FoodList;
