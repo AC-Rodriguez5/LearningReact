@@ -1,0 +1,97 @@
+/* Body & page background */
+body {
+  background-color: #1e1e2f; /* dark blue-gray */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Flex container for centering */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.Calculator {
+  max-width: 500px;
+  background-color: #2a2a3f; 
+  padding: 40px;
+  border-radius:50px;
+}
+.smallDisplay{
+  width: 330px;
+  height: 60px;
+  margin: 10px auto;
+  background-color: #2a2a3f; 
+  color: #5f8f8c;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  padding: 0px;
+  border-radius: 8px;
+  margin-top: -10px;
+}
+
+.Display {
+  width: 330px;
+  height: 60px;
+  margin: 10px auto;
+  background-color: #2a2a3f; 
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 2.8rem;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 300px;
+
+  
+}
+
+.dis {
+  margin: 0;
+}
+
+.FirstLayer, .SecondLayer, .ThirdLayer, .FourthLayer, .FifthLayer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 5px auto;
+}
+
+button {
+  width: 80px;
+  height: 80px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #3b3b5e;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #565680; /
+}
+
+.FifthLayer .zero-btn, .FirstLayer .func1 {
+  width: 170px;
+  border-radius: 25px;
+}
+
+.func4 {
+  background-color: #ff9500;
+  color: white;
+}
+
+.func1, .func2, .func3 {
+  background-color: #a5a5a5;
+  color: black;
+}
